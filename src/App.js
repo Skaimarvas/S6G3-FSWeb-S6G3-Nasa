@@ -12,7 +12,9 @@ function App() {
   useEffect(() => {
     console.warn("UYGULAMA YÜKLENDİ");
     axios
-      .get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+      .get(
+        "https://api.nasa.gov/planetary/apod?start_date=2023-05-18&end_date=2023-05-18&api_key=1Du39DsfSTetoxS36VQOeAREpZxV2afeRo3OiTnc"
+      )
       .then((res) => {
         console.log(res.data);
         setNasa(res.data);
@@ -30,7 +32,7 @@ function App() {
         </span>
         !
       </p>
-      <Photo photoData={nasa} />
+      <Photo photoData={nasa[0]} />
     </div>
   );
 }
