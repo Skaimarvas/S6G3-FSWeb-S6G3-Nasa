@@ -46,14 +46,14 @@ Bu proje, create-react-app (CRA) kullanılarak bir araya getirildi. Bu projenin 
 
 **Verileri Çekme**
 
-- [ ] `App.js` (veya her nerede istersen), NASA'dan alacağın verileri bir state'e ekle.
-- [ ] API çağrısını işlemek için, bir kez çalışan useEffect hook ekle.
-- [ ] [NASA APOD API docs](https://api.nasa.gov/#apod) NASA APOD API dökümanlarına git, dökümanları okuyarak API çağrısını nasıl oluşturacağını öğren.
-- [ ] Bir API keye ihtiyacın başta _yok_. Ancak, API kullanma sınırlarını aşarsan bir API keye ihtiyacın olabilir.
-- [ ] Koda geçmeden önce [Postman](https://www.postman.com/downloads/) bilgisayarına indirip, bağlantıları, ve gelen yanıtları test edebilirsin.
-- [ ] Dökümanlarda anlatılan API uç noktasından(endpoint) `axios` kullanarak verileri çek.
-- [ ] `.then()` metodunuzda `console.log` ile çekilen verinin içeriğini iyice incele. 😃
-- [ ] Verinizi state e eklemeden önce, effect hookunuzun peşinde bir dizi olduğuna emin olun (muhtemelen boş, çünkü bu efektin herhangi bir state/prop ile senkronize edilmesini istemiyoruz), aksi halde **sonsuz bir döngü başlatırsınız ve DEMO_KEY'in API hız limitlerini aşarsınız ve gerçek bir API_KEY kullanmanız gerekir.**
+- [x] `App.js` (veya her nerede istersen), NASA'dan alacağın verileri bir state'e ekle.
+- [x] API çağrısını işlemek için, bir kez çalışan useEffect hook ekle.
+- [x] [NASA APOD API docs](https://api.nasa.gov/#apod) NASA APOD API dökümanlarına git, dökümanları okuyarak API çağrısını nasıl oluşturacağını öğren.
+- [x] Bir API keye ihtiyacın başta _yok_. Ancak, API kullanma sınırlarını aşarsan bir API keye ihtiyacın olabilir.
+- [x] Koda geçmeden önce [Postman](https://www.postman.com/downloads/) bilgisayarına indirip, bağlantıları, ve gelen yanıtları test edebilirsin.
+- [x] Dökümanlarda anlatılan API uç noktasından(endpoint) `axios` kullanarak verileri çek.
+- [x] `.then()` metodunuzda `console.log` ile çekilen verinin içeriğini iyice incele. 😃
+- [x] Verinizi state e eklemeden önce, effect hookunuzun peşinde bir dizi olduğuna emin olun (muhtemelen boş, çünkü bu efektin herhangi bir state/prop ile senkronize edilmesini istemiyoruz), aksi halde **sonsuz bir döngü başlatırsınız ve DEMO_KEY'in API hız limitlerini aşarsınız ve gerçek bir API_KEY kullanmanız gerekir.**
 
 DEMO KEY kullanım limitleri:
 
@@ -64,15 +64,15 @@ _Not: eğer photo url bir fotoğraf değilse, React applicationında bir video n
 
 **Veriyi State'e ekleme**
 
-- [ ] Aramayı doğru bir şekilde yaptıktan ve verileri bir değişkene kaydettikten sonra, verileri oluşturduğunuz state'e ekleyin.
+- [x] Aramayı doğru bir şekilde yaptıktan ve verileri bir değişkene kaydettikten sonra, verileri oluşturduğunuz state'e ekleyin.
 
 **Veriyi Görüntüleme**
 Şimdi diğer bileşenlerinizi yapma zamanı. Kullanıcı arabiriminizi(UI) oluşturun ve ardından DOM'da oluşturabilmen için verileri props aracılığıyla alt bileşenlerine ilet.
 
 #### _MUÜ (MVP) Gereklilikleri:_
 
-- [ ] Bileşen eklendiğinde APOD verisini çekmek için useEffect hooku kullan.
-- [ ] Kullanıcı arabiriminizi(UI) oluşturmak için basitçe bir araya getirilmiş farklı bileşenlerde APOD verilerini görüntüle.
+- [x] Bileşen eklendiğinde APOD verisini çekmek için useEffect hooku kullan.
+- [x] Kullanıcı arabiriminizi(UI) oluşturmak için basitçe bir araya getirilmiş farklı bileşenlerde APOD verilerini görüntüle.
 
 #### Pro İpuçları
 

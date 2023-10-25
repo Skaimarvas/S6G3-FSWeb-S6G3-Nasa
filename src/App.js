@@ -32,7 +32,7 @@ function App() {
         </span>
         !
       </p>
-      <Photo photoData={nasa ? nasa[0] : "Yükleniyor"} />
+      {nasa ? <Photo photoData={nasa[0]} /> : <h3>{"Yükleniyor"}</h3>}
     </div>
   );
 }

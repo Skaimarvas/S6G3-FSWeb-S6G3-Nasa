@@ -6,9 +6,10 @@ function Photo({ photoData }) {
   return (
     <div className="container">
       <h2> {photoData.title} </h2>
+      <p>{`Copyright: ${photoData.copyright}`}</p>
+      <p>{`Date: ${photoData.date}`}</p>
       <img src={photoData.url}></img>
-      <p>{photoData.explanation}</p>
-      <p>Deneme</p>
+      <p>{`Explanation: ${photoData.explanation}`}</p>
     </div>
   );
 }
