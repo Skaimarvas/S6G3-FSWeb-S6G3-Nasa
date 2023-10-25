@@ -4,7 +4,7 @@ import "./main.css";
 function Photo({ photoData }) {
   console.log("photo", photoData.url);
   return (
-    <div className="container">
+    <div className="photo-container">
       <h2> {photoData.title} </h2>
       <p>{`Copyright: ${photoData.copyright}`}</p>
       <p>{`Date: ${photoData.date}`}</p>

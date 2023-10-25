@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono&display=swap");
 h1 {
   text-align: center;
-  background-color: red;
+  font-family: "Roboto Mono", monospace;
 }
 
 .container {
   margin: 2rem;
   border: 2px solid black;
+  background-color: #3876bf;
 }

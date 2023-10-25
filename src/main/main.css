@@ -1,0 +1,11 @@
+.photo-container {
+  background-color: #3876bf;
+  margin: 2rem;
+  border: 2px solid black;
+  font-family: "Roboto Mono", monospace;
+}
+
+p {
+  margin: 2rem;
+  font-size: 1.2rem;
+}
