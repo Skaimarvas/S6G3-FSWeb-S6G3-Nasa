@@ -94,7 +94,7 @@ return {
 
 MVP'ye ulaşılana ve son bir commit yapılana kadar ek görevleri denemeyin...
 
-- [ ] Opsiyonel bir `date` parametresi var dikkat ettin mi? Başka tarihe ait APOD'u çekmek için URL'de bunu şu şekilde tanımlayabilirsin `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2012-03-14`. Başka tarihe ait APOD'ları görebilmek için bir dropdown ekleyin. Bu biraz zahmetli olacak, ancak uygulamanda biraz daha karmaşık mantık ve etkileşimden geçmek harika bir alıştırma olacak. Bu aynı zamanda çok yaygın bir kullanım türüdür, bu yüzden bunu denemen senin için faydalı olur
+- [x] Opsiyonel bir `date` parametresi var dikkat ettin mi? Başka tarihe ait APOD'u çekmek için URL'de bunu şu şekilde tanımlayabilirsin `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2012-03-14`. Başka tarihe ait APOD'ları görebilmek için bir dropdown ekleyin. Bu biraz zahmetli olacak, ancak uygulamanda biraz daha karmaşık mantık ve etkileşimden geçmek harika bir alıştırma olacak. Bu aynı zamanda çok yaygın bir kullanım türüdür, bu yüzden bunu denemen senin için faydalı olur
 - [ ] Aynı web sitesinde listelenen NASA'nın diğer API'lerinden birini kullanan başka bir uygulama yapın
 
 ---

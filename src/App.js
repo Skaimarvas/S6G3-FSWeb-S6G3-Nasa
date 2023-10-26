@@ -4,6 +4,7 @@ import Header from "./header/Header";
 import { useState } from "react";
 import axios from "axios";
 import Main from "./main/Main";
+import styled from "styled-components";
 
 function App() {
   const myAPIKey = "1Du39DsfSTetoxS36VQOeAREpZxV2afeRo3OiTnc";
@@ -22,16 +23,51 @@ function App() {
       });
   }, [date]);
 
-  return (
-    <div className="App">
-      <Header />
-      <input
-        type="Date"
-        value={date}
-        onChange={(e) => setDate(e.target.value)}
-      />
+  const bgimage = {
+    backgroundImage: `url(${nasa ? nasa.url : ""})`,
+    backgroundSize: "cover",
+    margin: "1rem",
+  };
+  const Container = styled.div`
+    display: flex;
+    border: 2px solid black;
+  `;
+  const Box1 = styled.div`
+    flex: 0.1;
+    border: 2px solid black;
+  `;
 
-      {nasa ? <Main data={nasa} /> : <h3>{"Yükleniyor"}</h3>}
+  const Box2 = styled.div`
+    flex: 0.9;
+  `;
+
+  const Yan = styled.h2`
+    color: #fff;
+
+    -webkit-text-stroke: 1px black;
+    height: 100%;
+    writing-mode: vertical-rl;
+    margin: 0 auto;
+  `;
+
+  return (
+    <div className="App" style={bgimage}>
+      <Container>
+        <Box1>
+          <Yan>Astronomy Photo of The Day</Yan>
+        </Box1>
+        <Box2>
+          <Header />
+
+          <input
+            type="Date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          />
+
+          {nasa ? <Main data={nasa} /> : <h3>{"Yükleniyor"}</h3>}
+        </Box2>
+      </Container>
     </div>
   );
 }
